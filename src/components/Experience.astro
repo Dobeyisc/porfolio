@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "@/components/ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Diciembre 2023",
+    title: "Desarrollador de RESTful Api",
+    company: "Colegio distrital Francisco Jose de Caldas",
+    description:
+      "Creación y mantenimiento de una API REST para gestionar y persistir citas médicas en un entorno hospitalario.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
